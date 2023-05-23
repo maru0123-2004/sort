@@ -1,11 +1,4 @@
-from .bubble import buble
+from .bubble import bubble
 from .insert import insert
 from .selecting import select
-
-def isSorted(lst):
-    now=lst[0]
-    for i in lst:
-        if now > i:
-            return False
-    else:
-        return True
+from .util import isSorted
