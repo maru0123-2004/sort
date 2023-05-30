@@ -8,8 +8,8 @@ def isSorted(lst):
 def checkit(func):
     import random, time
     from pprint import pprint
-    #a=random.sample(range(0, 10**10), random.randint(10,1000))
-    a=[20,6,55,74,3,45,13,87,46,30]
+    a=random.sample(range(0, 10**10), random.randint(10,1000))
+    #a=[20,6,55,74,3,45,13,87,46,30]
     t1=time.process_time()
     b=sorted(a)
     t2=time.process_time()
