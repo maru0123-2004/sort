@@ -1,4 +1,4 @@
-def quick(lst:list):
+def quick(lst):
     i=0
     j=len(lst)-2
     while(1):
@@ -15,4 +15,3 @@ def quick(lst:list):
 if __name__ == "__main__":
     from util import checkit
     checkit(quick)
-    print(sorted([20,6,55,74,3,45,13,87,46,30]))
