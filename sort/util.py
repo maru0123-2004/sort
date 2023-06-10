@@ -3,6 +3,7 @@ def isSorted(lst):
     for i in lst:
         if now > i:
             return False
+        now=i
     else:
         return True
 def checkit(func):
