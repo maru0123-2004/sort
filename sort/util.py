@@ -2,6 +2,7 @@ def isSorted(lst):
     now=lst[0]
     for i in lst:
         if now > i:
+            print("failed in", now)
             return False
         now=i
     else:
