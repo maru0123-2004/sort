@@ -3,6 +3,9 @@ List of Sort algorism
 - bubble sort
 - insert sort
 - select sort
+- shell sort
+- quick sort
+- merge sort
 
 ## Usage
 ```shell
