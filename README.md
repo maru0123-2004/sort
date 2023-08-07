@@ -6,6 +6,7 @@ List of Sort algorism
 - shell sort
 - quick sort(with critical bug)
 - merge sort
+- heap sort
 
 And memory array
 - stack
