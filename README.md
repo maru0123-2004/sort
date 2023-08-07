@@ -4,8 +4,11 @@ List of Sort algorism
 - insert sort
 - select sort
 - shell sort
-- quick sort
+- quick sort(with critical bug)
 - merge sort
+
+And memory array
+- stack
 
 ## Usage
 ```shell
@@ -21,8 +24,18 @@ sort.insert([1, 4, 5, 2, 3])
 # [1, 2, 3, 4, 5]
 sort.select([1, 4, 5, 2, 3])
 # [1, 2, 3, 4, 5]
+#...
 
 #You can check is the list sorted with...
 sort.isSorted([1, 2, 3, 4, 5])
 # True
+
+import pipe
+stack=pipe.Stack(length=2)
+stack.push(1)
+stack.push(2)
+stack.push(3) # raise pipe.stack.StackOverflow
+stack.pop() # 2
+stack.pop() # 1
+stack.pop() # raise pipe.stack.StackUnderflow
 ```
