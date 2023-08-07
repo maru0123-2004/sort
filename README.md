@@ -9,6 +9,7 @@ List of Sort algorism
 
 And memory array
 - stack
+- queue
 
 ## Usage
 ```shell
@@ -38,4 +39,12 @@ stack.push(3) # raise pipe.stack.StackOverflow
 stack.pop() # 2
 stack.pop() # 1
 stack.pop() # raise pipe.stack.StackUnderflow
+
+queue=pipe.Queue(length=2)
+queue.enqueue(1)
+queue.enqueue(2)
+queue.enqueue(3) # raise pipe.queue.Full
+queue.dequeue() # 1
+queue.dequeue() # 2
+queue.dequeue() # raise pipe.queue.Empty
 ```
